@@ -26,7 +26,12 @@ class _tab5State extends State< tab5> {
       ),
       body:Stack(
         children:[
-          Image.asset("images/tas2.jpg", fit: BoxFit.cover,width:double.infinity,),
+          Container(decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("images/tas2.jpg"),
+                // it changes while updating from the function
+                fit: BoxFit.cover,
+              )),),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: ListView(

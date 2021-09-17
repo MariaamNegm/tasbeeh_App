@@ -29,7 +29,12 @@ class _tab1State extends State<tab1> {
             child: Stack(
                 children: [
                   //background image
-                  Image.asset("images/tas2.jpg", fit: BoxFit.cover,width:double.infinity,),
+                  Container(decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("images/tas2.jpg"),
+                        // it changes while updating from the function
+                        fit: BoxFit.cover,
+                      )),),
 
                   Center(
                     child: Column(

@@ -31,6 +31,7 @@ dependencies:
   animated_splash_screen: ^1.1.0
   cupertino_rounded_corners: ^2.0.1
   flutter_point_tab_bar: ^0.2.0
+  http:
 
 dev_dependencies:
   flutter_test:
